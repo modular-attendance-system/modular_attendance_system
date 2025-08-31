@@ -4,11 +4,11 @@
   "description": "A modern, QR-code-based attendance tracking system to validate an end-to-end architectural flow.",
   "private": true,
   "scripts": {
-    "install:backend": "cd packages/backend && npm install",
-    "install:frontend": "cd packages/web-frontend && npm install",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd web-frontend && npm install",
     "install:all": "npm run install:backend && npm run install:frontend",
-    "dev:backend": "npm --prefix packages/backend run dev",
-    "dev:frontend": "npm --prefix packages/web-frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix web-frontend run dev",
     "dev": "concurrently \"npm:dev:*\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
