@@ -1,0 +1,25 @@
+# Dependencies
+/node_modules
+/.pnpm-lock.yaml
+/package-lock.json
+/yarn.lock
+
+# Python
+/venv
+/__pycache__/
+*.pyc
+
+# Build output
+/build
+/dist
+/.next
+/.vite
+
+# Environment variables
+.env
+.env*.local
+
+# IDE & OS files
+.idea/
+.vscode/
+*.DS_Store
