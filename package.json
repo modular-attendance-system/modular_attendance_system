@@ -1,0 +1,35 @@
+{
+  "name": "modular_attendance_system",
+  "version": "0.1.0",
+  "description": "A modern, QR-code-based attendance tracking system to validate an end-to-end architectural flow.",
+  "private": true,
+  "scripts": {
+    "install:backend": "cd packages/backend && npm install",
+    "install:frontend": "cd packages/web-frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "dev:backend": "npm --prefix packages/backend run dev",
+    "dev:frontend": "npm --prefix packages/web-frontend run dev",
+    "dev": "concurrently \"npm:dev:*\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vibhutomer/modular_attendance_system.git"
+  },
+  "keywords": [
+    "attendance",
+    "qr-code",
+    "react",
+    "nodejs",
+    "monorepo"
+  ],
+  "author": "vibhutomer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vibhutomer/modular_attendance_system/issues"
+  },
+  "homepage": "https://github.com/vibhutomer/modular_attendance_system#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
